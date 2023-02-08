@@ -1,0 +1,42 @@
+{
+  "name": "client_one",
+  "version": "1.0.1",
+  "description": "",
+  "keywords": [
+    "pilet"
+  ],
+  "devDependencies": {
+    "@types/node": "latest",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "instance": "file:..\\instance\\dist\\emulator\\instance-1.0.5.tgz",
+    "piral-cli": "0.15.4",
+    "piral-cli-dotenv": "^0.2.0",
+    "piral-cli-webpack5": "0.15.6",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-router": "5.3.4",
+    "react-router-dom": "5.3.4",
+    "tslib": "2.5.0",
+    "typescript": "latest"
+  },
+  "scripts": {
+    "start": "pilet debug",
+    "build": "pilet build",
+    "upgrade": "pilet upgrade"
+  },
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "source": "src/index.tsx",
+  "importmap": {
+    "imports": {},
+    "inherit": [
+      "instance"
+    ]
+  },
+  "dependencies": {
+    "piral-configs": "^0.15.7-beta.5135"
+  }
+}
